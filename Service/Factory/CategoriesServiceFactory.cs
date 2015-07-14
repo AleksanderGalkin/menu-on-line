@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using SLTest.Service.Interface;
+using SLTest.Models;
+
+namespace SLTest.Service.Factory
+{
+    public static class CategoriesServiceFactory
+    {
+        public static IBaseService<Categories> Create()
+        {
+            return new CategoriesEntityService();
+        }
+    }
+}

@@ -1,0 +1,7 @@
+/obj/
+/App_Data/
+/bin/
+/web.config
+*.Publish.xml
+*.suo
+/Backup/

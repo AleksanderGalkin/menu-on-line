@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C040A0C0-7A11-46F5-B7C8-9F93C6B56409}</ProjectGuid>
+    <ProjectTypeGuids>{e53f8fea-eae0-44a6-8774-ffd645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLTest</RootNamespace>
+    <AssemblyName>SLTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject">
+      <HintPath>..\..\Ninject-3.0.0.15-release-net-4.0\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.Helpers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Abstract\BaseController.cs" />
+    <Compile Include="Controllers\Abstract\BaseController1DL.cs" />
+    <Compile Include="Controllers\Abstract\BaseController2DL.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\TablesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NavigatorController.cs" />
+    <Compile Include="Controllers\OptionsController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\OrderDashBoardController.cs" />
+    <Compile Include="Controllers\PageHelper.cs" />
+    <Compile Include="Controllers\RecipeController.cs" />
+    <Compile Include="Controllers\ShippingController.cs" />
+    <Compile Include="Controllers\SortsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\WaitersController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Categories.cs" />
+    <Compile Include="Models\Interface\INavigator.cs" />
+    <Compile Include="Models\menuStage.cs" />
+    <Compile Include="Models\OrderDashBoard.cs" />
+    <Compile Include="Models\Sorts.cs" />
+    <Compile Include="Models\Tables.cs" />
+    <Compile Include="Models\UserAndRoles.cs" />
+    <Compile Include="Models\waiters.cs" />
+    <Compile Include="Service\CategoriesEntityService.cs" />
+    <Compile Include="Service\Ninject\NinjectControllerFactory.cs" />
+    <Compile Include="Service\TablesEntityService.cs" />
+    <Compile Include="Service\Factory\TablesServiceFactory.cs" />
+    <Compile Include="Service\Factory\WaitersServiceFactory.cs" />
+    <Compile Include="Service\WaitersEntityService.cs" />
+    <Compile Include="Service\UserAndRolesService.cs" />
+    <Compile Include="Service\Factory\CategoriesServiceFactory.cs" />
+    <Compile Include="Service\Factory\UserAndRolesServiceFactory.cs" />
+    <Compile Include="Service\Factory\SortsServiceFactory.cs" />
+    <Compile Include="Service\SortsEntityService.cs" />
+    <Compile Include="Service\Helper\btOrder.cs" />
+    <Compile Include="Models\CoffeeModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoffeeModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Interface\IBase.cs" />
+    <Compile Include="Models\korzina.cs" />
+    <Compile Include="Models\Navigator.cs" />
+    <Compile Include="Models\Options.cs" />
+    <Compile Include="Models\PageInfo.cs" />
+    <Compile Include="Models\Recipe.cs" />
+    <Compile Include="Models\VMMenu.cs" />
+    <Compile Include="Models\VMOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Factory\OptionsServiceFactory.cs" />
+    <Compile Include="Service\Helper\menuCreator.cs" />
+    <Compile Include="Service\Helper\MyPager.cs" />
+    <Compile Include="Service\OrderDashBoardsEntityService.cs" />
+    <Compile Include="Service\OrderStagesEntityService.cs" />
+    <Compile Include="Service\OptionEntityService.cs" />
+    <Compile Include="Service\Factory\RecipeServiceFactory.cs" />
+    <Compile Include="Service\Interface\IBaseService.cs" />
+    <Compile Include="Service\RecipeEntityService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\COFFEEEX.MDF" />
+    <Content Include="App_Data\coffeeex_log.ldf">
+      <DependentUpon>COFFEEEX.MDF</DependentUpon>
+    </Content>
+    <Content Include="Content\ajax-loader.gif" />
+    <Content Include="Content\bg.jpg" />
+    <Content Include="Content\bg2.jpg" />
+    <Content Include="Content\bg3.jpg" />
+    <Content Include="Content\btDel.png" />
+    <Content Include="Content\btDelClicked.png" />
+    <Content Include="Content\btEdit.png" />
+    <Content Include="Content\btEditClicked.png" />
+    <Content Include="Content\btInsert.png" />
+    <Content Include="Content\btInsertClicked.png" />
+    <Content Include="Content\btToList.png" />
+    <Content Include="Content\btToListClicked.png" />
+    <Content Include="Content\btToShop.png" />
+    <Content Include="Content\btToShopClicked.png" />
+    <Content Include="Content\coficon.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\font\coficon.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.7-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.js" />
+    <Content Include="Scripts\jquery-1.7.min.js" />
+    <Content Include="Views\Account\pvLogOn.ascx" />
+    <Content Include="Views\Categories\pvCreate.ascx" />
+    <Content Include="Views\Categories\DEL!!!pvDelete.ascx" />
+    <Content Include="Views\Categories\pvEdit.ascx" />
+    <Content Include="Views\Categories\PVIndex.ascx" />
+    <Content Include="Views\Home\AdministrationStart.ascx" />
+    <Content Include="Views\OrderDashBoard\Detail.aspx" />
+    <Content Include="Views\Tables\DEL!!Delete.aspx" />
+    <Content Include="Views\Tables\pvCreate.ascx" />
+    <Content Include="Views\Tables\pvDelete.ascx" />
+    <Content Include="Views\Tables\pvEdit.ascx" />
+    <Content Include="Views\Tables\PVIndex.ascx" />
+    <Content Include="Views\Waiters\DEL!!!pvDelete.ascx" />
+    <Content Include="Views\Waiters\pvCreate.ascx" />
+    <Content Include="Views\Waiters\pvEdit.ascx" />
+    <Content Include="Views\Waiters\PVIndex.ascx" />
+    <Content Include="Views\Sorts\pvCreate.ascx" />
+    <Content Include="Views\Sorts\DEL!!!pvDelete.ascx" />
+    <Content Include="Views\Sorts\pvEdit.ascx" />
+    <Content Include="Views\Sorts\PVIndex.ascx" />
+    <Content Include="Views\Home\Administration.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\Korzina.aspx" />
+    <Content Include="Views\Home\PVIndex.ascx" />
+    <Content Include="Views\OrderDashBoard\DachBoardView.aspx" />
+    <Content Include="Views\OrderDashBoard\pvIndex.ascx" />
+    <Content Include="Views\Order\Detail.aspx" />
+    <Content Include="Views\Order\Index.aspx" />
+    <Content Include="Views\Order\Payment.aspx" />
+    <Content Include="Views\Order\Success.aspx" />
+    <Content Include="Views\Shipping\pvKorzina.ascx" />
+    <Content Include="Views\Home\DEL!!Test.aspx" />
+    <Content Include="Views\Navigator\Index.aspx" />
+    <Content Include="Views\Navigator\PVIndex.ascx" />
+    <Content Include="Views\Options\DEL!!Delete.aspx" />
+    <Content Include="Views\Options\pvCreate.ascx" />
+    <Content Include="Views\Options\pvDelete.ascx" />
+    <Content Include="Views\Options\pvEdit.ascx" />
+    <Content Include="Views\Options\PVIndex.ascx" />
+    <Content Include="Views\Recipe\DEL!!!Delete.aspx" />
+    <Content Include="Views\Recipe\pvCreate.ascx" />
+    <Content Include="Views\Recipe\DEL!!pvDelete.ascx" />
+    <Content Include="Views\Recipe\pvEdit.ascx" />
+    <Content Include="Views\Recipe\PVIndex.ascx" />
+    <Content Include="Views\Shipping\Index.aspx" />
+    <Content Include="Views\Shipping\pvCashOrCart.ascx" />
+    <Content Include="Views\Shipping\pvIndex.ascx" />
+    <Content Include="Views\Users\pvEdit.ascx" />
+    <Content Include="Views\Users\PVIndex.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Content\font\coficon.eot" />
+    <Content Include="Content\font\coficon.ttf" />
+    <Content Include="Content\font\coficon.woff" />
+    <None Include="_bin_deployableAssemblies\System.Web.Mvc.dll" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\CoffeeModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CoffeeModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64140</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

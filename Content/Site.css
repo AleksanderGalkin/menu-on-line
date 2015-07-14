@@ -1,0 +1,1154 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body
+{
+    background-color: #442d25;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    
+    background-image: url('../Content/bg.jpg');
+    
+     background-attachment:fixed; width:100%; height:100%;
+     
+     
+     }
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #505abc;
+}
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active
+{
+    color: #12eb87;
+}
+
+a.selected
+{
+    font-size: 1.5em;
+    color: #CDBE70;
+}
+a.allowed
+{
+    font-size: 1.0em;
+    color: #8B814C;
+}
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2
+{
+    padding: 0 0 10px 0;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+select.sel_table
+{
+    width:100%;
+    
+    
+}
+
+/* this rule styles <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+#header h1
+{
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serifl
+    font-size: 32px !important;
+}
+
+#ws_container
+{
+    max-width:1600px;
+    min-width:1350px;
+    border-color:Red;
+}
+#main
+{
+   
+    background-position: center;
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+    
+    float:right;
+    width:75%;
+
+     
+}
+#navigator
+{
+   
+    background-position: center;
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+    
+    float:left;
+    width:15%;
+
+     
+}
+
+
+#footer
+{
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    font-size: .9em;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a
+{
+    display: inline-block;
+    padding: 0px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #90EE90; 
+    color: #442d25; 
+    outline:none;
+}
+
+
+ul#menu li a:hover
+{
+    background-color: #9AFF9A;
+    text-decoration: none;
+    /*
+    background-color: #fff;
+    text-decoration: none;
+    */
+}
+
+ul#menu li a:active
+{
+    background-color: #43CD80;
+    text-decoration: none;
+    /*
+    background-color: #a6e2a6;
+    text-decoration: none;
+    */
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* POPUP MENU   
+----------------------------------------------------------*/
+ul#popup
+{
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: left;
+}
+
+ul#popup li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#popup li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#popup li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #90EE90;  /*e8eef4*/
+    color: #442d25;
+    outline:none;
+}
+
+ul#popup li a:hover
+{
+    background-color: #9AFF9A;
+    text-decoration: none;
+}
+
+ul#popup li a:active
+{
+    background-color: #43CD80;
+    text-decoration: none;
+}
+
+ul#popup li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+/* Insert,Edit,Delete buttons   
+----------------------------------------------------------*/
+
+a.btRecords
+{
+  /*  background-color: #fff; 
+    background-repeat:no-repeat;
+    background-size:100%; 
+    min-width:20px;
+    display: inline-block; /*  ссылки становятся встроенными блоками */
+    text-decoration: none; /* отмена подчеркивания */
+    text-align: center; /* центровка текста */
+    padding: 30% 0 10%; /* внутренние отступы ссылок */
+   /* font-size:0px;
+    margin:0px 0px;
+    */
+    
+}
+
+  a.btInsert
+{
+    background-image:url('/Content/btInsert.png');
+}
+
+  a.btEdit
+{
+    background-image:url('/Content/btEdit.png');
+}
+
+ a.btEdit:hover
+{
+    background-image:url('/Content/btEditClicked.png');
+}
+
+a.btEdit:active
+{
+    background-image:url('/Content/btEdit.png');
+    padding: 25% 0 10%;
+}
+  a.btDelete
+{
+    background-image:url('/Content/btDel.png');
+}
+
+  a.btDelete:hover
+{
+    background-image:url('/Content/btDelClicked.png');
+}
+
+ a.btDelete:active
+{
+    background-image:url('/Content/btDel.png');
+    padding: 25% 0 10%;
+}
+
+
+td.btTd
+{
+    padding: 0px;
+}
+
+
+a.btBody
+{
+    background-color: #fff; 
+    background-repeat:no-repeat;
+    background-size:100%; 
+   /* min-width:20px;*/
+    display: inline-block; /*  ссылки становятся встроенными блоками */
+    text-decoration: none; /* отмена подчеркивания */
+    text-align: center; /* центровка текста */
+    padding: 1.2% 4%; /* внутренние отступы ссылок */
+    font-size:0px;
+    margin:0% 0%;
+    
+    position:relative;
+
+}
+
+  a.btInsert
+{
+    background-image:url('/Content/btInsert.png');
+}
+
+  a.btInsert:hover
+{
+    background-image:url('/Content/btInsertClicked.png');
+}
+
+ a.btInsert:active
+{
+    background-image:url('/Content/btInsert.png');
+    padding: 1.1% 4%
+}
+
+  a.btToShop
+{
+    background-image:url('/Content/btToShop.png');
+}
+
+  a.btToShop:hover
+{
+    background-image:url('/Content/btToShopClicked.png');
+}
+
+ a.btToShop:active
+{
+    background-image:url('/Content/btToShop.png');
+    padding: 1.1% 4%
+}
+
+  a.btToList
+{
+    background-image:url('/Content/btToList.png');
+}
+
+  a.btToList:hover
+{
+    background-image:url('/Content/btToListClicked.png');
+}
+
+ a.btToList:active
+{
+    background-image:url('/Content/btToList.png');
+    padding: 1.1% 4%
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset 
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"],select.sel_edit
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+table.single
+{
+    table-layout:fixed;
+    width:90%;
+}
+.s_col_small{width:3%;}
+.s_col_middle{width:15%;}
+.s_col_large{width:30%;}
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;   
+  border: solid 1px #e8eef4;
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;
+  background-color: #e8eef4; 
+  border: solid 1px #e8eef4;   
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color:Red;
+}
+
+#menucontainer
+{
+    margin-top:40px;
+}
+
+div#title
+{
+    display:block;
+    float:left;
+    text-align:left;
+}
+
+#logindisplay
+{
+    font-size:1.1em;
+    display:block;
+    text-align:right;
+    margin:10px;
+    color:White;
+}
+
+#logindisplay a:link
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label,
+.display-field,
+.editor-field
+{
+    margin: 0.5em 0;
+}
+
+.text-box
+{
+    width: 30em;
+}
+
+.text-box.multi-line
+{
+    height: 6.5em;
+}
+
+.tri-state
+{
+    width: 6em;
+}
+
+/* Styles for Cart
+----------------------------------------------------------*/
+
+input.tbItCartCount
+{
+    width: 5em;
+}
+
+
+a.btCart
+{
+    background-color: #DCDCDC; 
+    color:#000;
+    text-decoration: none; /* отмена подчеркивания */
+    padding: 0.3em 1.5em; /* внутренние отступы ссылок */
+    text-align: center; /* центровка текста */
+    font-size:1em;
+    display:inline-block;
+    border:1px solid #696969;
+    outline:none;
+
+  
+}
+
+ a.btReCalc:hover
+{
+    background-color: #A6F4FF;
+    border: 1px solid #26A0DA; 
+ 
+}
+
+a.btReCalc:active
+{
+ background-color: #34B4E3;
+}
+
+.stImpInfo
+{
+    font: bold 100% Verdana;
+}
+
+/* Styles for Orders
+----------------------------------------------------------*/
+
+a.btOrders
+{
+    background-color: #DCDCDC; 
+    color:#000;
+    text-decoration: none; /* отмена подчеркивания */
+    padding: 0.0em 0.5em; /* внутренние отступы ссылок */
+    text-align: center; /* центровка текста */
+    font-size:1em;
+    display:inline-block;
+    border:1px solid #696969;
+    outline:none;
+
+  
+}
+
+ a.btToPay:hover
+{
+    background-color: #A6F4FF;
+    border: 1px solid #26A0DA; 
+ 
+}
+
+a.btToPay:active
+{
+ background-color: #34B4E3;
+}
+tr.rowOrders:hover
+{
+    background-color: #A6F4FF;
+    cursor:pointer
+}
+
+.section{
+border-left:solid 1px #999;
+border-bottom:solid 1px #999;
+float:left;
+height:58px;
+margin-left:10px;
+min-width:98px;
+text-align:center;
+display:block;
+}
+.section .display-field
+{
+    font: bold 100% Verdana;
+}
+.section.comment
+{
+    max-width:25%;
+    min-width:98px;
+}
+#wrapper div:first-child
+{
+    margin-left:0px;
+}
+
+.orderDetails
+{
+    margin-top:10px;
+    display:inline-block;
+    width:100%;
+    
+}
+ div table td.trNoBorder 
+{
+    border-color:transparent;
+}    
+
+/* Styles for DashBoard
+----------------------------------------------------------*/
+
+a.btSignal
+{
+    background-color: #DCDCDC; 
+    color:#000;
+    text-decoration: none; /* отмена подчеркивания */
+    padding: 0.0em 0.5em; /* внутренние отступы ссылок */
+    text-align: center; /* центровка текста */
+    font-size:1em;
+    display:inline-block;
+    border:1px solid #696969;
+    outline:none;
+    
+}
+
+a.ordCreated{
+    background-color: #FF0000; 
+    color:#000;
+}
+ a.ordCreated:hover{
+    background-color: #D74242;
+    color:#FFFFFF;
+    border: 1px solid #26A0DA; 
+}
+a.ordCreated:active{
+ background-color: #7F0505;
+}
+
+
+ a.ordCooking:hover{
+    background-color: #A6F4FF;
+    border: 1px solid #26A0DA; 
+}
+a.ordCooking:active{
+ background-color: #34B4E3;
+}
+
+ a.ordCooked{
+    background-color: #FFFF00;
+    color:#8B7500;
+    border: 1px solid #26A0DA; 
+}
+ a.ordCooked:hover{
+    background-color: #8B7500;
+    color:#000;
+    border: 1px solid #26A0DA; 
+}
+a.ordCooked:active{
+ background-color: #34B4E3;
+}
+
+ a.ordShiped:hover{
+    background-color: #A6F4FF;
+    border: 1px solid #26A0DA; 
+}
+a.ordShiped:active{
+ background-color: #34B4E3;
+}
+
+ a.notReq:hover{
+    background-color: #A6F4FF;
+    border: 1px solid #26A0DA; 
+}
+a.notReq:active{
+ background-color: #34B4E3;
+}
+
+ a.reqed{
+    background-color: #FF0000;
+    border: 1px solid #26A0DA; 
+}
+ a.reqed:hover{
+    background-color: #D74242;
+    color:#FFFFFF;
+    border: 1px solid #26A0DA; 
+}
+a.reqed:active{
+ background-color: #7F0505;
+}
+
+ a.cashed:hover{
+    background-color: #A6F4FF;
+    border: 1px solid #26A0DA; 
+}
+a.cashed:active{
+ background-color: #34B4E3;
+}
+
+
+ a.banked:hover{
+    background-color: #8ABFAD;
+    color:#FFFFFF;
+    border: 1px solid #26A0DA; 
+}
+a.banked:active{
+ background-color: #44CB9E;
+}
+
+
+tr.rowDashBoard:hover
+{
+    background-color: #A6F4FF;
+    cursor:pointer
+}
+
+    
+
+/* Context menu
+----------------------------------------------------------*/
+
+.context-menu {
+    position: absolute; /* Задаем абсолютное позиционирование для нашего меню */
+    display: none; /* Изначально не показываем его */
+    background-color: #fff; /* Цвет фона меню */
+    border: 1px solid #333; /* Граница */
+
+    /* Немного красивостей. Добавляем тень для нашего меню, что бы отобразить его слегка выше остальных элементов страницы: */
+    -moz-box-shadow: -5px 2px 10px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: -5px 2px 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+   /* box-shadow: -5px 2px 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+/* Добавляем стили для списка которые будет находиться внутри меню и, собственно, содержать его пункты: */
+.context-menu ul { list-style: none; margin: 0; padding: 0; }
+            
+.context-menu ul li { margin: 0; padding: 0; background-color: #fff; display: block; }
+
+/* Стили для ссылок пунктов меню: */
+.context-menu ul li a { color: #333; text-decoration: none; font-size: 12px; display: block; padding: 5px; }
+            
+.context-menu ul li a:hover { background-color: #eee; }
+
+
+/* BUTTONS  
+----------------------------------------------------------*/
+ul.buttons
+{
+    padding:  2px;
+    position: relative;
+    margin: 0;
+    text-align: left;
+}
+
+ul.buttons li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul.buttons li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4; 
+    color:#034af3; 
+    outline:none;
+}
+
+ul.buttons li a:hover
+{
+    background-color: #9AFF9A;
+    text-decoration: none;
+}
+
+ul.buttons li a:active
+{
+    background-color: #43CD80;
+    text-decoration: none;
+}
+
+ul.buttons li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}     
+
+/*EditButton
+----------------------------------------------------------*/
+.EditButton
+{
+    height:1.5em;
+    width:100%;
+    padding: 30px 0 0 0;
+    margin: 0;
+ 
+    
+   
+}
+.EditButton .i
+{
+ 	height:100%;
+	overflow: hidden;
+	padding-right: 10px;
+
+}   
+.EditButton div input
+{
+   	width:100%;
+	height:100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+}
+
+.EditButton .b
+{
+    float:right;
+    width:20px;
+    height:100%;
+    
+}
+
+/*EditButton Google
+----------------------------------------------------------*/
+.EditButtonG
+{
+    height:1.5em;
+    width:100%;
+    padding: 0 0 0 0;
+    margin: 0;
+   
+}
+
+
+/* SchBUTTONS  
+----------------------------------------------------------*/
+ul.schbuttons
+{
+    
+    padding: 0 0 0 0;
+    position: relative;
+    margin: 0 0 0 2px;
+    text-align: left;
+    display: inline-block;
+    float:right;
+    height:100%;
+    
+}
+
+ul.schbuttons li
+{
+    display: inline-block;
+    list-style: none;
+}
+
+ul.schbuttons li a
+{
+    padding: 2px 6px 2px 6px;
+    margin:0;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 0;
+    background-color: #e8eef4; 
+    color:#034af3; 
+    outline:none;
+}
+
+ul.schbuttons li a:hover
+{
+    background-color: #9AFF9A;
+    text-decoration: none;
+}
+
+ul.schbuttons li a:active
+{
+    background-color: #43CD80;
+    text-decoration: none;
+}
+
+ul.schbuttons li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}     
+     
+       
+/* MENU NAVIGATOR 
+----------------------------------------------------------*/
+       
+
+ul.navMenu 
+{
+        padding: 0;
+        margin: 0;
+        
+        
+	
+}
+
+ ul.navMenu  li {
+        list-style: none;
+         
+         /* height: 47px;  */
+
+        margin: 5px;
+        width: 100%;
+        text-align: left;
+        background-color: #e8eef4;
+        
+        padding: 5px 0px 5px 5px;
+        
+        font-size: 1em;
+        font-family: Verdana, Helvetica, Sans-Serif;
+           
+        font-weight: bold;
+        color: #442d25;
+        
+        }
+
+		
+ ul.navMenu li ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: none;
+        position:relative;
+        left:-5px;
+        top:5px;
+       
+ }		
+		
+		
+ ul.navMenu li ul li {
+        margin: 0px;
+        width: 100%;
+        text-align: left;
+        padding: 5px 0px 0px 5px;
+        background-color: #e8eef4;
+        
+}		
+ul.navMenu li  a
+{
+        font-size: 1em;
+        font-family: Verdana, Helvetica, Sans-Serif;
+        font-weight: bold;
+        color: #442d25;
+        text-decoration:none;
+}
+/*
+ ul.navMenu li:hover ul  {
+        display: block;
+		
+        }
+ul.navMenu li:hover .navAnnot  
+{
+    min-height:1em;
+}
+*/
+ul.navMenu li .navAnnot
+{
+        font-size: 0.9em;
+        font-family: Verdana, Helvetica, Sans-Serif;
+        font-weight:lighter;
+        font-style:italic;
+        color: black;
+        
+}   
+
+
+/* moveButton
+----------------------------------------------------------*/
+div.moveButtonBlock
+{
+    display:inline-block;
+    vertical-align:baseline;
+    
+}
+
+div.moveButton
+{
+    padding:  2px;
+    margin: 0;
+    text-align: left;
+    display:inline-block;
+    vertical-align:top;
+    display:block;
+}
+
+
+div.moveButton a
+{
+    padding: 5px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4; 
+    color:#034af3; 
+    outline:none;
+
+
+}
+
+div.moveButton a:hover
+{
+    background-color: #9AFF9A;
+    text-decoration: none;
+}
+
+div.moveButton a:active
+{
+    background-color: #43CD80;
+    text-decoration: none;
+}
+
+
+
+/* Ajax loader  
+----------------------------------------------------------*/
+#loader
+{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:40%;
+    
+} 
+
+#loader_dashboard
+{
+    display:none;
+    position:absolute;
+    top:35%;
+    left:50%;
+    
+} 
+
+/* DachBoard radio buttons 
+----------------------------------------------------------*/
+.radioMode
+{
+    outline:none;
+}
+
+/* Logotype on the master page
+----------------------------------------------------------*/
+.logo
+{
+    cursor:pointer;
+}
